@@ -1,7 +1,10 @@
 
 ## Function Declarations
+### Scala
+{% highlight scala %} 
+def sum(a: Int, b: Int): Int = a+b 
+{% endhighlight %} 
 
-| Scala | Kotlin |
-|-------|--------|
-| 1 | 2 |
-| 3 | 4 | 
+{% highlight kotlin %} 
+fun sum(a: Int, b: Int): Int = a+b
+{% endhighlight %} 
