@@ -1,16 +1,16 @@
 
 ## Function Declarations
-### Scala
+### Scala uses def
 ```scala
 def sum(a: Int, b: Int): Int = a+b 
 ```
-### Kotlin
+### Kotlin uses fun
 ```kotlin
 fun sum(a: Int, b: Int): Int = a+b
 ```
 
 ## Passing Functions
-### Scala
+### Scala uses =>
 ```scala
 def sumf(f: Int => Int, a: Int, b: Int): Int =
     if (a > b) 0
@@ -19,7 +19,7 @@ def sumf(f: Int => Int, a: Int, b: Int): Int =
 ```scala
 sumf(x => x*x, 1, 5)
 ```
-### Kotlin
+### Kotlin uses ->, () to declare, {} to invoke
 ```kotlin
 fun sumf(f: (Int) -> Int, a: Int, b: Int): Int =
     if (a > b) 0
@@ -30,5 +30,5 @@ sumf({ x -> x * x }, 2, 3)
 ```
 OR
 ```kotlin
-sumf({ it * it }, 2, 3) // lambda's taking only one parameter as input get a default name
+sumf({ it * it }, 2, 3) 
 ```
