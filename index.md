@@ -3,4 +3,5 @@
 
 | Scala | Kotlin |
 |-------|--------|
-| def sum(a: Int, b: Int): Int = a+b |  fun sum(a: Int, b: Int): Int = a+b  |
+| 1 | 2 |
+| 3 | 4 | 
