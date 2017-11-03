@@ -1,13 +1,13 @@
 
 ## Function Declarations
 ### Scala
-{% highlight scala %} 
+```scala
 def sum(a: Int, b: Int): Int = a+b 
-{% endhighlight %} 
+```
 ### Kotlin
-{% highlight kotlin %} 
+```
 fun sum(a: Int, b: Int): Int = a+b
-{% endhighlight %} 
+```
 
 ## Passing Functions
 ### Scala
