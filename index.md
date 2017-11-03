@@ -3,4 +3,4 @@
 
 | Scala | Kotlin |
 |-------|--------|
-|{% highlight scala %} def sum(a: Int, b: Int): Int = a+b {% endhighlight %} | {% highlight kotlin %} fun sum(a: Int, b: Int): Int = a+b {% endhighlight %} |
+| def sum(a: Int, b: Int): Int = a+b |  fun sum(a: Int, b: Int): Int = a+b  |
