@@ -1,4 +1,4 @@
-## Declaring Named Functions
+## Defining Named Functions
 
 ### Scala uses def
 
@@ -44,7 +44,27 @@ fun sumf(f: (Int) -> Int, a: Int, b: Int): Int =
 ```kotlin
 sumf({ x -> x * x }, 2, 3)
 ```
-OR
-```kotlin
-sumf({ it * it }, 2, 3) 
+
+## Defining a Class and its Constructor
+### Scala uses new
+```scala
+class Rational(a: Int, b: Int) {
+    def numer = a
+    def denom = b
+}
 ```
+```scala
+new Rational(2, 3)
+```
+### Kotlin
+```kotlin
+class Rational(a: Int, b: Int) {
+    val numer = a
+    val denom = b
+}
+```
+```kotlin
+Rational(2, 3)
+```
+  
+  
