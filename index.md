@@ -1,15 +1,18 @@
+## Named Functions
 
-## Function Declarations
 ### Scala uses def
+
 ```scala
 def sum(a: Int, b: Int): Int = a+b 
 ```
+
 ### Kotlin uses fun
+
 ```kotlin
 fun sum(a: Int, b: Int): Int = a+b
 ```
 
-## Passing Functions
+## Lambda Functions
 ### Scala uses =>
 ```scala
 def sumf(f: Int => Int, a: Int, b: Int): Int =
@@ -19,7 +22,7 @@ def sumf(f: Int => Int, a: Int, b: Int): Int =
 ```scala
 sumf(x => x*x, 1, 5)
 ```
-### Kotlin uses ->. And {} to invoke
+### Kotlin uses -> and {} 
 ```kotlin
 fun sumf(f: (Int) -> Int, a: Int, b: Int): Int =
     if (a > b) 0
