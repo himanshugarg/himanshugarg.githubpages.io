@@ -1,12 +1,12 @@
 ## Defining Named Functions
 
-### Scala uses def
+#### Scala uses def
 
 ```scala
 def sum(a: Int, b: Int): Int = a+b 
 ```
 
-### Kotlin uses fun
+#### Kotlin uses fun
 
 ```kotlin
 fun sum(a: Int, b: Int): Int = a+b
@@ -14,19 +14,19 @@ fun sum(a: Int, b: Int): Int = a+b
 
 ## Named Function Reference
 
-### Scala
+#### Scala
 
 ```scala
 sum
 ```
 
-### Kotlin uses ::
+#### Kotlin uses ::
 ```kotlin
 ::sum
 ```
 
 ## Lambda Functions
-### Scala uses =>
+#### Scala uses =>
 ```scala
 def sumf(f: Int => Int, a: Int, b: Int): Int =
     if (a > b) 0
@@ -35,7 +35,7 @@ def sumf(f: Int => Int, a: Int, b: Int): Int =
 ```scala
 sumf(x => x*x, 1, 5)
 ```
-### Kotlin uses -> and {} 
+#### Kotlin uses -> and {} 
 ```kotlin
 fun sumf(f: (Int) -> Int, a: Int, b: Int): Int =
     if (a > b) 0
@@ -46,7 +46,7 @@ sumf({ x -> x * x }, 2, 3)
 ```
 
 ## Defining a Class and its Constructor
-### Scala uses new
+#### Scala uses new
 ```scala
 class Rational(a: Int, b: Int) {
     def numer = a
@@ -56,7 +56,7 @@ class Rational(a: Int, b: Int) {
 ```scala
 new Rational(2, 3)
 ```
-### Kotlin
+#### Kotlin
 ```kotlin
 class Rational(a: Int, b: Int) {
     val numer = a
