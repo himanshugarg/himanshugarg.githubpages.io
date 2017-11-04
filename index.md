@@ -19,7 +19,7 @@ def sumf(f: Int => Int, a: Int, b: Int): Int =
 ```scala
 sumf(x => x*x, 1, 5)
 ```
-### Kotlin uses ->, () to declare, {} to invoke
+### Kotlin uses ->. And {} to invoke
 ```kotlin
 fun sumf(f: (Int) -> Int, a: Int, b: Int): Int =
     if (a > b) 0
