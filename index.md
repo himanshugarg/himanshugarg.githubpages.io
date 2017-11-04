@@ -1,4 +1,4 @@
-## Named Functions
+## Declaring Named Functions
 
 ### Scala uses def
 
@@ -10,6 +10,19 @@ def sum(a: Int, b: Int): Int = a+b
 
 ```kotlin
 fun sum(a: Int, b: Int): Int = a+b
+```
+
+## Named Function Reference
+
+### Scala
+
+```scala
+sum
+```
+
+### Kotlin uses ::
+```kotlin
+::sum
 ```
 
 ## Lambda Functions
