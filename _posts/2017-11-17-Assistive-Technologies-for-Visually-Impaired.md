@@ -19,10 +19,15 @@ The number of blind in India is estimated to reach 31M by 2020 [1](https://www.n
 
 1. Facebook's automatic [alt-text](https://www.facebook.com/help/216219865403298?helpref=faq_content)
 
-Accessiblity Checkers
+##### Accessiblity Checkers
 
 1. [Accessibility Scanner](https://support.google.com/accessibility/android/answer/6376570?hl=en)  for Android
 2. [Web Accessibility Checker](https://achecker.ca/checker/index.php) for Websites
+
+##### Human Assistance
+
+[Be My Eyes](http://bemyeyes.com/) Android and iOS Apps
+[Depict](http://www.niamhparsley.com/Depict/index.html) Image Descriptions for the Blind
 
 ##### Brailled Embossers
 ##### Screen Magnifiers
