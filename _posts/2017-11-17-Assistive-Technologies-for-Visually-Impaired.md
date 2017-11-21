@@ -25,6 +25,8 @@ The screen readers read out the content an application exposes. If we focus only
 ##### PDF
 Accessing PDF's poses challenges when non-standard text encodings are used eg. in Indian Language NCERT Textbooks. Or when the text is actually an embedded image.
 
+Non-commercial tools are listed [here](https://stackoverflow.com/questions/3650957/how-to-extract-text-from-a-pdf)
+
 ##### Accessiblity Checkers
 1. [Accessibility Scanner](https://support.google.com/accessibility/android/answer/6376570?hl=en)  for Android
 2. [Web Accessibility Checker](https://achecker.ca/checker/index.php) for Websites
