@@ -26,8 +26,8 @@ The screen readers read out the content an application exposes. If we focus only
 Accessing PDF's poses challenges when non-standard text encodings are used eg. in Indian Language NCERT Textbooks. Or when the text is actually an embedded image.
 
 Other challenges here:-
-1. How to extract style information for content in a pdf (https://answers.acrobatusers.com/how-to-extract-style-information-for-content-in-a-pdf-q102117.aspx)
-2. How to copy text out of a PDF without losing formatting (https://superuser.com/questions/198392/how-to-copy-text-out-of-a-pdf-without-losing-formatting)
+1. [How to extract style information for content in a pdf](https://answers.acrobatusers.com/how-to-extract-style-information-for-content-in-a-pdf-q102117.aspx)
+2. [How to copy text out of a PDF without losing formatting](https://superuser.com/questions/198392/how-to-copy-text-out-of-a-pdf-without-losing-formatting)
 
 Non-commercial tools are listed [here](https://stackoverflow.com/questions/3650957/how-to-extract-text-from-a-pdf)
 
