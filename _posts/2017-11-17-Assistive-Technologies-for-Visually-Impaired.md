@@ -1,4 +1,4 @@
-# Asistive Technologies for the Visually Impaired
+# Assistive Technologies for the Visually Impaired
 
 The number of blind in India is estimated to reach [31M by 2020](https://www.ncbi.nlm.nih.gov/pubmed/11804362).
 
