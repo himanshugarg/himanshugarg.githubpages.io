@@ -1,4 +1,5 @@
 # The Emperor's Old Clothes
+![Professor Hoare](https://upload.wikimedia.org/wikipedia/commons/2/2c/Sir_Tony_Hoare_IMG_5125.jpg "Image Courtesy Wikipedia")
 Notes from Professor Hoare's Turing Award Lecture:-
 
 The highest goal of programming language design is to enable good ideas to be elegantly expressed. (pp. 3)
