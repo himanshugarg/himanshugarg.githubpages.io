@@ -1,4 +1,4 @@
-Lessons (not all learned) from failed projects
+# The Lesson Not Learnt
 
 * Between two features to complete before meeting the client, choose to meet the client.
 * Between starting immediately vs starting later, give it a few minutes now.
