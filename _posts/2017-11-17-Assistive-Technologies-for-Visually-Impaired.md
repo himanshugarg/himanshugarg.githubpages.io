@@ -36,6 +36,10 @@ Non-commercial tools are listed [here](https://stackoverflow.com/questions/36509
 1. [Accessibility Scanner](https://support.google.com/accessibility/android/answer/6376570?hl=en)  for Android
 2. [Web Accessibility Checker](https://achecker.ca/checker/index.php) for Websites
 3. [PDF Accessibility](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html)
+4. [List of Tools at W3](https://www.w3.org/WAI/ER/tools/)
+
+##### Test Samples
+1. [EBOOKS](https://www.dessci.com/en/reference/ebooks/)
 
 ##### Software Assistants
 1. [Siri](https://www.apple.com/in/ios/siri/)
