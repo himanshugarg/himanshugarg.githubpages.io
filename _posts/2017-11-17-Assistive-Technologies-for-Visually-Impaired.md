@@ -1,5 +1,6 @@
-# Assistive Technologies for the Visually Impaired
-
+---
+categories: a11y
+---
 The number of blind in India is estimated to reach [31M by 2020](https://www.ncbi.nlm.nih.gov/pubmed/11804362).
 
 [Wikipedia](https://en.wikipedia.org/wiki/Assistive_technology#Visual_impairments) mentions these assistive technologies for the visually impaired. Screen Readers are one of them

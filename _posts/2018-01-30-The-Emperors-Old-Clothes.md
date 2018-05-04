@@ -1,3 +1,6 @@
+---
+categories: practice
+---
 # The Emperor's Old Clothes
 Notes from Professor Hoare's Turing Award Lecture:-
 

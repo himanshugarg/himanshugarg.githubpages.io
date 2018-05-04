@@ -1,5 +1,6 @@
-# Why I am not a Slow (NumPy) Learner 
-
+---
+categories: design
+---
 I have tried learning NumPy a Number of times. But its inconsistent overloading of operators beats me everytime. See for example [The Basics in the Quickstart tutorial](https://docs.scipy.org/doc/numpy/user/quickstart.html)
 
 > NumPy's main object is the homogeneous multidimensional array. It is a table of elements(usually numbers), all of the same type, indexed by a tuple of positive integers.

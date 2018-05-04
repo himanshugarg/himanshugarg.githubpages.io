@@ -1,5 +1,6 @@
-# Macro for Replacing Text in VBA for CorelDraw
-
+---
+categories: cdr
+---
 ```vb
 Public Sub TextTranslate()
     ActiveDocument.BeginCommandGroup "Text Translate"
