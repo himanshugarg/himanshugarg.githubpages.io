@@ -1,7 +1,6 @@
 ---
 categories: practice
 ---
-# The Emperor's Old Clothes
 Notes from Professor Hoare's Turing Award Lecture:-
 
 The highest goal of programming language design is to enable good ideas to be elegantly expressed. (pp. 3)
