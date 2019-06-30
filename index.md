@@ -1,18 +1,16 @@
-### HG: The Second Best Time is Now
-
-#### {{ Practice }}
+<h4> Practice </h4>
   
 {% for post in site.categories.practice %}
   <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
 {% endfor %}
     
-#### {{ Poem }}
+<h4> Poem </h4>
   
 {% for post in site.categories.poem %}
   <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
 {% endfor %}
 
-#### {{ Personal }}
+<h4> Personal </h4>
   
 {% for post in site.categories.personal %}
   <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
