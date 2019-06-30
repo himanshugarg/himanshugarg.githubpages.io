@@ -1,6 +1,7 @@
 --
 categories: research
 --
+
 ## ABSTRACT
 
 The current status of Indian languages on the web may best be described as “Diversity in Unity”! All Indian language scripts (except for Urdu & Sindhi) are derived from the same Brahmi Script and also share a common alphabet to a large extent. But languages like Hindustani, Sindhi use different scripts making the texts available in one script inaccessible to persons not knowing that script. Because of different scripts for different Indian languages, which otherwise share common culture, two languages can’t share language independent information with each other. When it comes to electronic media, the situation is still worse. Even the texts in the same language are font dependent making them unsharable. Though standards exist they are not followed!
