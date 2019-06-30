@@ -1,6 +1,7 @@
 ---
-categories: cdr
+categories: practice
 ---
+
 ```vb
 Public Sub TextTranslate()
     ActiveDocument.BeginCommandGroup "Text Translate"
