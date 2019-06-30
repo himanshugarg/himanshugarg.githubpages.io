@@ -4,7 +4,7 @@
   <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
 {% endfor %}
     
-<h4> Poem </h4>
+<h4> Poems </h4>
   
 {% for post in site.categories.poem %}
   <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
