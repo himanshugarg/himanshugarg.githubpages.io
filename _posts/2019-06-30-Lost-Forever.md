@@ -11,6 +11,6 @@ Instead of staying,
 On the path to meaning.
 
 Then comes the night,
-The path goes out of sight,
+When there is no light,
 Forever.
 ```
