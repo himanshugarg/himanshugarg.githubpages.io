@@ -1,5 +1,6 @@
 ---
 categories: personal
+layout: default
 ---
 
 ```
