@@ -3,7 +3,7 @@ layout: page
 categories: javascript
 title: थोड़ी सी जावास्क्रिप्ट
 ---
-
+![My helpful screenshot](/assets/firefox-console-729.png)
 ## कैलकुलेटर
 
 कंप्यूटर जी पर फायरफॉक्स ब्राउज़र खोलें, Ctrl Shift K एक साथ दबाएं, और गणित का कोई सवाल टाईप करें:-
