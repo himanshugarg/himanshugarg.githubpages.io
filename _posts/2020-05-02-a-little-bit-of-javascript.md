@@ -326,8 +326,8 @@ let taxiNos = function() {
 			if (sum <= 9999 && nos.indexOf(sum) == -1) {
 				nos.push(sum);
 			}
-		}
-	}
+		});
+	});
 	return nos;
 }
 ```
