@@ -12,7 +12,7 @@
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> 9 * 9 * 9;
+>>> 9 * 9 * 9
 729
 ```
   {% else %}
@@ -95,19 +95,20 @@
 
 ---
 * किसी संख्या को खुद से तीन बार गुणा करने से उस संख्या का घन निकलता है, जैसे 10 का घन 1000 है। यदि हमें किसी नयी संख्या जैसे कि 12 का घन निकालना हो तो फिर 12 * 12 * 12 लिखना होगा। क्या ऐसा हो सकता है कि हम कंप्यूटर जी को सवाल का हल निकालने का तरीका ही याद करा दें? 
+
 ---
 
-कंप्यूटर जी पर हम अपना काम और भी कम कर सकते हैं। हम उन्हें कह सकते हैं कि दिये गये नाम की एक जगह बनाएं जहां हल निकालने के तरीके को ही संभाल कर रख लें:- 
+कंप्यूटर जी के साथ हम अपना काम और भी कम कर सकते हैं। हम उन्हें कह सकते हैं कि दिये गये नाम की एक जगह बनाएं जहां हल निकालने के तरीके को ही संभाल कर रख लें:- 
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> def cube(n) 
-	return n*n*n
+>>> def cube(n): 
+    return n*n*n
 ```
   {% else %}
 ```javascript
 >> let cube = function (n) {
-	return n*n*n;
+    return n*n*n;
 }
 ```
 {% endcase %}
@@ -155,9 +156,8 @@
 {% case page.lang %}
   {% when "python" %}
 ```python
-def sumCubes (a, b) {
-?
-}
+def sumCubes (a, b):
+    ?
 >>> sumCubes(2, 3) 
 35
 ```
@@ -178,12 +178,12 @@ let sumCubes = function(a, b) {
   {% when "python" %}
 ```python
 >>> if cube(12) + cube(1) == 1729: 
-	print('sum of 12 cubed and 1 cubed is 1729');
+    print('sum of 12 cubed and 1 cubed is 1729');
 ```
   {% else %}
 ```javascript
 >> if (cube(12) + cube(1) == 1729) {
-	console.log('sum of 12 cubed and 1 cubed is 1729');
+    console.log('sum of 12 cubed and 1 cubed is 1729');
 } 
 ```
 {% endcase %}
@@ -192,18 +192,17 @@ let sumCubes = function(a, b) {
 {% case page.lang %}
   {% when "python" %}
 ```python
-if (cube(13) + cube(0) != 1729) {
-	print('13 cubed is not 1729');
-} else {
-	print('13 cubed is 1729');
-}
+if cube(13) + cube(0) != 1729:
+    print('13 cubed is not 1729');
+else:
+    print('13 cubed is 1729');
 ```
   {% else %}
 ```javascript
 if (cube(13) + cube(0) != 1729) {
-	console.log('13 cubed is not 1729');
+    console.log('13 cubed is not 1729');
 } else {
-	console.log('13 cubed is 1729');
+    console.log('13 cubed is 1729');
 }
 ```
 {% endcase %}
@@ -214,13 +213,11 @@ if (cube(13) + cube(0) != 1729) {
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> checkSumOfCubes = function(a, b) {
->>> if (cube(a) + cube(b) == 1729) {
-		return ?;
-	} else {
-		return ?;
-	}
-}
+>>> def checkSumOfCubes(a, b):
+        if cube(a) + cube(b) == 1729:
+            return ?
+        else:
+            return ?
 >>> checkSumOfCubes(1, 11)
 true
 >>> checkSumOfCubes(2, 10)
@@ -230,10 +227,10 @@ false
 ```javascript
 >> let checkSumOfCubes = function(a, b) {
 >> if (cube(a) + cube(b) == 1729) {
-		return ?;
-	} else {
-		return ?;
-	}
+        return ?;
+    } else {
+        return ?;
+    }
 }
 >> checkSumOfCubes(1, 11)
 true
@@ -249,11 +246,11 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> print('जय हो!');
+>>> print('जय हो!')
 जय हो!
->>> print('जय हो!');
+>>> print('जय हो!')
 जय हो!
->>> print('जय हो!');
+>>> print('जय हो!')
 जय हो!
 ```
   {% else %}
@@ -272,14 +269,13 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> while (true) {
-	print('जय हो!');
-}
+>>> while (true):
+...     print('जय हो!')
 ```
   {% else %}
 ```javascript
 >> while (true) {
-	console.log('जय हो!');
+    console.log('जय हो!');
 }
 ```
 {% endcase %}
@@ -322,14 +318,14 @@ false
 ```python
 >>> n = 0;
 >>> while (true) {
-	?
+    ?
 }
 ```
   {% else %}
 ```javascript
 >> let n = 0;
 >> while (true) {
-	?
+    ?
 }
 ```
 {% endcase %}
@@ -372,16 +368,16 @@ false
 ```python
 >>> n = 0;
 >>> while (n < 10) {
-	print(n);
-	n = n+1;
+    print(n);
+    n = n+1;
 }
 ```
   {% else %}
 ```javascript
 >> let n = 0;
 >> while (n < 10) {
-	console.log(n);
-	n = n+1;
+    console.log(n);
+    n = n+1;
 }
 ```
 {% endcase %}
@@ -395,8 +391,8 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> greetings = ['सलाम', 'नमस्ते', 'हैलो'];
->>> fib = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+>>> greetings = ['सलाम', 'नमस्ते', 'हैलो']
+>>> fib = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 ```
   {% else %}
 ```javascript
@@ -409,7 +405,7 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> print(names[0]);
+>>> print(names[0])
 सलाम
 ```
   {% else %}
@@ -437,7 +433,7 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> print(names.length);
+>>> print(len(names));
 3
 ```
   {% else %}
@@ -451,7 +447,7 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
-print(names[names.length-1]);
+print(names[-1]);
 हैलो
 ```
   {% else %}
@@ -467,21 +463,19 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> range = function(start, end) {
-	numbers = [];
-	while (start <= end) {
-		?
-	}	
-}
->>> print(numbersUpto(10));
+>>> define numbersUpto(start, end) {
+...     numbers = []
+...     while start <= end: 
+...         ?
+>>> print(numbersUpto(10))
 ```
   {% else %}
 ```javascript
->> let range = function(start, end) {
-	let numbers = [];
-	while (start <= end) {
-		?
-	}	
+>> let numbersUpto = function(start, end) {
+    let numbers = [];
+    while (start <= end) {
+        ?
+    }   
 }
 >> console.log(numbersUpto(10));
 ```
@@ -493,25 +487,25 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> greetings.push('सत् स्री अकाल');
->>> greetings.push('सत् स्री अकाल');
->>> print(names.length);
+>>> greetings.push('सत् श्री अकाल')
+>>> greetings.push('सत् श्री अकाल')
+>>> print(len(greetings));
 5
->>> print(names[3]);
-सत् स्री अकाल
->>> print(names[4]);
-सत् स्री अकाल
+>>> print(greetings[3]);
+सत् श्री अकाल
+>>> print(greetings[4]);
+सत् श्री अकाल
 ```
   {% else %}
 ```javascript
 >> greetings.push('सत् स्री अकाल');
->> greetings.push('सत् स्री अकाल');
->> console.log(names.length);
+>> greetings.push('सत् श्री अकाल');
+>> console.log(greetings.length);
 5
->> console.log(names[3]);
-सत् स्री अकाल
->> console.log(names[4]);
-सत् स्री अकाल
+>> console.log(greetings[3]);
+सत् श्री अकाल
+>> console.log(greetings[4]);
+सत् श्री अकाल
 ```
 {% endcase %}
 
@@ -519,14 +513,13 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> greetings.forEach(function(item, index, array) {
-	print(item, index);
-});
+>>> for item in greetings:
+...     print(item)
 ```
   {% else %}
 ```javascript
 >> greetings.forEach(function(item, index, array) {
-	console.log(item, index);
+    console.log(item, index);
 });
 ```
 {% endcase %}
@@ -536,18 +529,16 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> greetings.forEach(function(item1, index1, array1) {
-	greetings.forEach(function(item2, index2, array2) {
-		print(item1, item2);
-	});
-});
+>>> for item1 in greetings:
+        for item2 in greetings:
+            print(item1, item2)
 ```
   {% else %}
 ```javascript
 >> greetings.forEach(function(item1, index1, array1) {
-	greetings.forEach(function(item2, index2, array2) {
-		console.log(item1, item2);
-	});
+    greetings.forEach(function(item2, index2, array2) {
+        console.log(item1, item2);
+    });
 });
 ```
 {% endcase %}
@@ -556,22 +547,19 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> greetings.forEach(function(item1, index1, array1) {
-	greetings.forEach(function(item2, index2, array2) {
-		if (?) {
-			print(item1, item2);
-		}
-	});
-});
+>>> for item1 in greetings:
+...     for item2 in greetings:
+...         if ?:
+...             print(item1, item2)
 ```
   {% else %}
 ```javascript
 >> greetings.forEach(function(item1, index1, array1) {
-	greetings.forEach(function(item2, index2, array2) {
-		if (?) {
-			console.log(item1, item2);
-		}
-	});
+    greetings.forEach(function(item2, index2, array2) {
+        if (?) {
+            console.log(item1, item2);
+        }
+    });
 });
 ```
 {% endcase %}
@@ -582,10 +570,8 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> print(greetings.indexOf('सलाम'));
+>>> print(greetings.index('सलाम'));
 0
->>> print(greetings.indexOf('अलविदा'));
--1
 ```
   {% else %}
 ```javascript
@@ -600,19 +586,19 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->>>	list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
->>>	listOfCubes = [];
->>>	list.forEach(function(item, index, array) {
-		listOfCubes.push(?);
-	});
+>>> list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+>>> listOfCubes = []
+>>> list.forEach(function(item, index, array) {
+        listOfCubes.push(?);
+    });
 ```
   {% else %}
 ```javascript
->>	let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
->>	let listOfCubes = [];
->>	list.forEach(function(item, index, array) {
-		listOfCubes.push(?);
-	});
+>>  let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+>>  let listOfCubes = [];
+>>  list.forEach(function(item, index, array) {
+        listOfCubes.push(?);
+    });
 ```
 {% endcase %}
 *  getListOfCubes नाम की एक जगह बनाएं जो दी गई संख्या तक की सारी संख्याओं के घनों की एक सूची बना कर दे
@@ -620,7 +606,7 @@ console.log(names[names.length-1]);
   {% when "python" %}
 ```python
 >> getListOfCubes = function(n) {
-	?
+    ?
 }
 >> list = getListOfCubes(11);
 >> print(list[list.length-1]);
@@ -629,7 +615,7 @@ console.log(names[names.length-1]);
   {% else %}
 ```javascript
 >> let getListOfCubes = function(n) {
-	?
+    ?
 }
 >> let list = getListOfCubes(11);
 >> console.log(list[list.length-1]);
@@ -643,37 +629,37 @@ console.log(names[names.length-1]);
   {% when "python" %}
 ```python
 >>> taxiNos = function() {
-	list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
-		    12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
-	nos = [];
-	list.forEach(function(item1, index1, array1) {
-		list.forEach(function(item2, index2, array2) {
-			sum = item1*item1*item1 + item2*item2*item2;
-			// यदि sum चार अंकों तक का ही है और अभी तक नहीं मिला है
-			if (sum <= 9999 && nos.indexOf(sum) == -1) {
-				nos.push(sum);
-			}
-		});
-	});
-	return nos;
+    list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
+            12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+    nos = [];
+    list.forEach(function(item1, index1, array1) {
+        list.forEach(function(item2, index2, array2) {
+            sum = item1*item1*item1 + item2*item2*item2;
+            // यदि sum चार अंकों तक का ही है और अभी तक नहीं मिला है
+            if (sum <= 9999 && nos.indexOf(sum) == -1) {
+                nos.push(sum);
+            }
+        });
+    });
+    return nos;
 }
 ```
   {% else %}
 ```javascript
 >> let taxiNos = function() {
-	let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
-		    12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
-	let nos = [];
-	list.forEach(function(item1, index1, array1) {
-		list.forEach(function(item2, index2, array2) {
-			let sum = item1*item1*item1 + item2*item2*item2;
-			// यदि sum चार अंकों तक का ही है और अभी तक नहीं मिला है
-			if (sum <= 9999 && nos.indexOf(sum) == -1) {
-				nos.push(sum);
-			}
-		});
-	});
-	return nos;
+    let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
+            12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+    let nos = [];
+    list.forEach(function(item1, index1, array1) {
+        list.forEach(function(item2, index2, array2) {
+            let sum = item1*item1*item1 + item2*item2*item2;
+            // यदि sum चार अंकों तक का ही है और अभी तक नहीं मिला है
+            if (sum <= 9999 && nos.indexOf(sum) == -1) {
+                nos.push(sum);
+            }
+        });
+    });
+    return nos;
 }
 ```
 {% endcase %}
