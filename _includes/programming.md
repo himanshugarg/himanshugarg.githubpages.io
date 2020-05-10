@@ -7,7 +7,7 @@
 
 आइये, हम भी कंप्यूटर जी के साथ जावास्क्रिप्ट में बात करते-करते ऐसी ही मजेदार संख्याएं ढूंढें।
 <details markdown="1">
-<summary>कंप्यूटर जी पर फायरफॉक्स ब्राउज़र खोलें, Ctrl Shift K एक साथ दबाएं, और गणित का कोई सवाल टाईप करें।</summary>
+<summary>कंप्यूटर जी पर फायरफॉक्स ब्राउज़र खोलें, Ctrl Shift K एक साथ दबाएं, और गणित का कोई सवाल टाईप करें। कंप्यूटर जी आपके सवाल का हल निकाल कर आपको देंगे। यह काम एक साधारण कैलकुलेटर पर भी हो जाएगा। या शायद आप अपने मन में ही इसे हल कर लें।</summary>
 
 {% case page.lang %}
   {% when "python" %}
@@ -21,12 +21,14 @@
 729
 ```
 {% endcase %}
-
 </details>
-कंप्यूटर जी आपके सवाल का हल निकाल कर आपको देंगे। यह काम एक साधारण कैलकुलेटर पर भी हो जाएगा। या शायद आप अपने मन में ही इसे हल कर लें।
+
 
 ---
-* 1 का 0 से भाग देकर देखें क्या आता है?
+
+<details markdown="1">
+<summary>1 का 0 से भाग देकर देखें क्या आता है? </summary>
+	
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -37,9 +39,12 @@
 >> 1/0;
 ```
 {% endcase %}
+</details>
 ---
-
+<details markdown="1">
+<summary>
 कंप्यूटर जी को आप और भी बहुत से काम बता सकते हैं। आप कंप्यूटर जी को कह सकते हैं कि दिये गये नाम की एक जगह बनाएं और वहां हल को संभाल कर रख लें।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -50,8 +55,12 @@
 >> let cube9 = 729;
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 जिससे जरूरत पड़ने पर आप हल याद करने के बजाय उसका नाम उपयोग कर सकें।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -64,8 +73,12 @@
 729
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 किसी नये हल को नये नाम की जगह बना कर वहां रख सकते हैं।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -80,8 +93,12 @@
 1000
 ```
 {% endcase %}
+</details>
 
-और बाद में उन हलों को लिखने के बजाय उनके नामों से ही नये सवालों का हल निकाल सकते हैं
+<details markdown="1">
+<summary>
+और बाद में उन हलों को लिखने के बजाय उनके नामों से ही नये सवालों का हल निकाल सकते हैं।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -94,13 +111,18 @@
 1729
 ```
 {% endcase %}
+</details>
+
 
 ---
 * किसी संख्या को खुद से तीन बार गुणा करने से उस संख्या का घन निकलता है, जैसे 10 का घन 1000 है। यदि हमें किसी नयी संख्या जैसे कि 12 का घन निकालना हो तो फिर 12 * 12 * 12 लिखना होगा। क्या ऐसा हो सकता है कि हम कंप्यूटर जी को सवाल का हल निकालने का तरीका ही याद करा दें? 
 
 ---
 
+<details markdown="1">
+<summary>
 कंप्यूटर जी के साथ हम अपना काम और भी कम कर सकते हैं। हम उन्हें कह सकते हैं कि दिये गये नाम की एक जगह बनाएं जहां हल निकालने के तरीके को ही संभाल कर रख लें:- 
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -114,8 +136,12 @@
 }
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 ऐसा करने से हमने एक function बना दिया है। अब वह काम करने के लिये बस उस काम का नाम ही काफी है, क्योंकि हमने कंप्यूटर जी को उस नाम का काम ही याद करा दिया है। अब हमारे पास कुछ वैसी ही मशीन बन गई है जिसमें जो सिक्का डालेंगे उसी के अनुसार वो आपका काम करेगी। अब हम अन्य सवालों का हल करा सकते हैं जिनमें वही तरीका काम आता है। 
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -140,9 +166,13 @@
 1842
 ```
 {% endcase %}
----
+</details>
 
+---
+<details markdown="1">
+<summary>
 * क्या और कोई संख्याऐं हैं जिन्हें cube(?) + cube(?) करने पर 1729 आता हो? कुछ अलग-अलग संख्याओं के साथ आज़माएं यदि 1729 आ जाये।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -153,8 +183,12 @@
 >> cube(7) + cube(12)
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 * sumCubes नाम की एक जगह बनाएं जो दी गई दो संख्याओं को खुद से तीन बार गुणा करके जोड़ कर बताए।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -172,10 +206,14 @@ let sumCubes = function(a, b) {
 35
 ```
 {% endcase %}
+</details>
 
 ---
 
+<details markdown="1">
+<summary>
 यदि हमें कंप्यूटर जी से कुछ ढूंढने का काम कराना हो तो कंप्यूटर जी के पास यह पता करने का तरीका होना चाहिये कि वह चीज़ उन्हें मिल गई। कंप्यूटर जी के पास ऐसा तरीका है बस आपको उन्हें बताना होगा जांच क्या करनी है:-
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -189,8 +227,12 @@ let sumCubes = function(a, b) {
 } 
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 और जांच के सफल या असफल होने पर अलग-अलग काम कर सकते हैं:-
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -208,10 +250,14 @@ if (cube(13) + cube(0) != 1729) {
 }
 ```
 {% endcase %}
+</details>
 
 ---
 
+<details markdown="1">
+<summary>
 * checkSumOfCubes नाम की एक जगह बनाएं जो दी गई दो संख्याओं के खुद से गुणा कर जोड़ कर देखे कि 1729 आता है या नहीं।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -240,11 +286,15 @@ true
 false
 ```
 {% endcase %}
+</details>
 
 ---
 
 
+<details markdown="1">
+<summary>
 किसी काम को बार-बार कराने के लिये हम उस काम को बार-बार लिख सकते हैं। 
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -265,9 +315,12 @@ false
 जय हो!
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 या कंप्यूटर जी को बता सकते हैं कि इस एक काम को हमेशा करते रहें।
-
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -281,12 +334,15 @@ false
 }
 ```
 {% endcase %}
+</details>
 
 पर कंप्यूटर जी अगर हमेशा एक ही काम करते रहे तो हम उनसे और कोई काम नहीं करा पायेंगे। हो सकता है कि उन्हें रोकना भी मुश्किल हो जाए।
 
 ---
+<details markdown="1">
+<summary>
 * इसको चला कर देखें क्या होता है।
-
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -313,8 +369,12 @@ false
 ...
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 * पिछले सवाल में जो काम बार-बार हो रहा है उसे while से कैसे कराएंगे
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -330,8 +390,11 @@ false
 }
 ```
 {% endcase %}
+</details>
+<details markdown="1">
+<summary>
 * इस सवाल में जो काम बार-बार हो रहा है उसे while से कैसे कराएंगे।
-
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -360,10 +423,14 @@ false
 >> console.log(n)
 ```
 {% endcase %}
+</details>
 
 ---
 
+<details markdown="1">
+<summary>
 किसी काम को हमेशा करते रहने कि बजाय हम कंप्यूटर जी को हम बता सकते हैं कि काम को दोहराने से पहले जांच कर लें कि काम को आगे करना भी है या नहीं।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -381,13 +448,16 @@ false
 }
 ```
 {% endcase %}
+</details>
 
 ---
 * यदि हमें किसी संख्या को खुद से ही 100 बार गुणा करना हो तो कैसे करेंगे? 
-
 ---
 
+<details markdown="1">
+<summary>
 यदि हमें एक जैसा काम कई चीज़ों पर दोहराना हो तो उन सबको नए नाम देने होंगे। इससे अच्छा होगा कि हम उन चीज़ों की एक सूची बना कर कंप्यूटर जी को उसे संभाल कर रखने के लिये कहें:-
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -400,8 +470,12 @@ false
 >> let fib = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 अब हम कंप्यूटर जो को सूची की पहली चीज़ पर कुछ करने के लिये कह सकते हैं।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -414,8 +488,12 @@ false
 सलाम
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 सूची की दूसरी चीज़ पर कुछ करने के लिये कह सकते हैं।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -428,8 +506,12 @@ false
 सलाम
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 सूची में कितनी चीज़ें हैं पता कर सकते हैं।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -442,8 +524,12 @@ false
 3
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 सूची की आखरी चीज़ पर कुछ करने के लिये कह सकते हं।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -456,10 +542,14 @@ console.log(names[names.length-1]);
 हैलो
 ```
 {% endcase %}
+</details>
 
 ---
 * यदि हमें 1 से 100 तक की संख्याओं की सूची बनानी हो तो कैसे बनाएंगे?
+<details markdown="1">
+<summary>
 * numbersUpto नाम की एक जगह बनाएं जो 1 से लेकर दी गई संख्या तक की संख्याओं की एक सूची बना कर दे।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -480,10 +570,14 @@ console.log(names[names.length-1]);
 >> console.log(numbersUpto(10));
 ```
 {% endcase %}
+</details>
 
 ---
 
+<details markdown="1">
+<summary>
 हम सूची में नई चीज जोड़ सकते हैं:-
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -508,8 +602,12 @@ console.log(names[names.length-1]);
 सत् श्री अकाल
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 या सूची की सारी चीज़ों पर कुछ करने के लिये कह सकते हैं:-
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -523,9 +621,13 @@ console.log(names[names.length-1]);
 });
 ```
 {% endcase %}
+</details>
 
 ---
+<details markdown="1">
+<summary>
 *  इसको चला कर देखें क्या आता है
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -542,8 +644,12 @@ console.log(names[names.length-1]);
 });
 ```
 {% endcase %}
+</details>
 
+<details markdown="1">
+<summary>
 *  पिछले सवाल में कुछ लाईनें आती हैं जिनकी शायद हमें जरूरत ना हो, यदि हमें उनको हटाना हो तो क्या कर सकते हं:-
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -563,10 +669,14 @@ console.log(names[names.length-1]);
 });
 ```
 {% endcase %}
+</details>
 
 ---
 
+<details markdown="1">
+<summary>
 हम सूची में पता लगा सकते हैं कि कोई चीज़ कहां पर है:-
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -581,8 +691,12 @@ console.log(names[names.length-1]);
 -1
 ```
 {% endcase %}
+</details>
 ---
+<details markdown="1">
+<summary>
 * 1 से 11 तक की संख्याओं को खुद से तीन बार गुणा करके एक सूची बनाएं।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -600,7 +714,11 @@ console.log(names[names.length-1]);
     });
 ```
 {% endcase %}
+</details>
+<details markdown="1">
+<summary>
 *  getListOfCubes नाम की एक जगह बनाएं जो दी गई संख्या तक की सारी संख्याओं के घनों की एक सूची बना कर दे
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -620,9 +738,13 @@ console.log(names[names.length-1]);
 1729
 ```
 {% endcase %}
+</details>
 
 ---
+<details markdown="1">
+<summary>
 यह एक function है जो हमें 9999 तक की सभी ऐसी संख्याएं बता देता है जो 2 संख्याओं के घनों से बनती हैं। 
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -657,8 +779,12 @@ console.log(names[names.length-1]);
 }
 ```
 {% endcase %}
+</details>
 ---
+<details markdown="1">
+<summary>
 * Taxicab(n) नाम का एक function बनाएं जो वो सबसे छोटी संख्या बताए जो n अलग-अलग तरीकों से 2 संख्याओं के घनों को जोड़कर बनती है।
+</summary>
 {% case page.lang %}
   {% when "python" %}
 ```python
@@ -676,6 +802,7 @@ console.log(names[names.length-1]);
 1729
 ```
 {% endcase %}
+</details>
 ---
 श्रीनिवास रामानुजन ऐसे सवाल बिना कंप्यूटर जी के, अपने मन में ही हल कर लेते थे। अच्छा है हमारे साथ कंप्यूटर जी हैं।
 
