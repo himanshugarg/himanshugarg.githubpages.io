@@ -103,7 +103,7 @@
   {% when "python" %}
 ```python
 >>> def cube(n): 
-    return n*n*n
+...     return n*n*n
 ```
   {% else %}
 ```javascript
@@ -157,7 +157,7 @@
   {% when "python" %}
 ```python
 def sumCubes (a, b):
-    ?
+...    ?
 >>> sumCubes(2, 3) 
 35
 ```
@@ -178,7 +178,7 @@ let sumCubes = function(a, b) {
   {% when "python" %}
 ```python
 >>> if cube(12) + cube(1) == 1729: 
-    print('sum of 12 cubed and 1 cubed is 1729');
+...     print('sum of 12 cubed and 1 cubed is 1729')
 ```
   {% else %}
 ```javascript
@@ -192,10 +192,10 @@ let sumCubes = function(a, b) {
 {% case page.lang %}
   {% when "python" %}
 ```python
-if cube(13) + cube(0) != 1729:
-    print('13 cubed is not 1729');
-else:
-    print('13 cubed is 1729');
+>>> if cube(13) + cube(0) != 1729:
+...     print('13 cubed is not 1729')
+... else:
+...     print('13 cubed is 1729')
 ```
   {% else %}
 ```javascript
@@ -214,10 +214,10 @@ if (cube(13) + cube(0) != 1729) {
   {% when "python" %}
 ```python
 >>> def checkSumOfCubes(a, b):
-        if cube(a) + cube(b) == 1729:
-            return ?
-        else:
-            return ?
+...     if cube(a) + cube(b) == 1729:
+...         return ?
+...     else:
+...         return ?
 >>> checkSumOfCubes(1, 11)
 true
 >>> checkSumOfCubes(2, 10)
@@ -288,12 +288,12 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> n = 0;
+>>> n = 0
 
->>> n = n+1;
->>> print(n);
+>>> n = n+1
+>>> print(n)
 
->>> n = n+1;
+>>> n = n+1
 >>> print(n)
 
 ...
@@ -316,10 +316,9 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> n = 0;
->>> while (true) {
-    ?
-}
+>>> n = 0
+>>> while (true):
+...    ?
 ```
   {% else %}
 ```javascript
@@ -334,14 +333,14 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> n = 0;
->>> product = 1;
+>>> n = 0
+>>> product = 1
 
->>> n = n+1;
->>> product = product * 10;
->>> print(n);
+>>> n = n+1
+>>> product = product * 10
+>>> print(n)
 
->>> n = n+1;
+>>> n = n+1
 >>> product = product * 10
 >>> print(n)
 ```
@@ -366,11 +365,10 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> n = 0;
->>> while (n < 10) {
-    print(n);
-    n = n+1;
-}
+>>> n = 0
+>>> while n < 10:
+...    print(n)
+...    n = n+1
 ```
   {% else %}
 ```javascript
@@ -419,7 +417,7 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> print(names[1]);
+>>> print(names[1])
 सलाम
 ```
   {% else %}
@@ -433,7 +431,7 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> print(len(names));
+>>> print(len(names))
 3
 ```
   {% else %}
@@ -447,7 +445,7 @@ false
 {% case page.lang %}
   {% when "python" %}
 ```python
-print(names[-1]);
+print(names[len(names) - 1])
 हैलो
 ```
   {% else %}
@@ -463,7 +461,7 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> define numbersUpto(start, end) {
+>>> define numbersUpto(start, end):
 ...     numbers = []
 ...     while start <= end: 
 ...         ?
@@ -530,8 +528,8 @@ console.log(names[names.length-1]);
   {% when "python" %}
 ```python
 >>> for item1 in greetings:
-        for item2 in greetings:
-            print(item1, item2)
+...     for item2 in greetings:
+...         print(item1, item2)
 ```
   {% else %}
 ```javascript
@@ -570,7 +568,7 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> print(greetings.index('सलाम'));
+>>> print(greetings.index('सलाम'))
 0
 ```
   {% else %}
@@ -586,17 +584,16 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+>>> listOfNos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 >>> listOfCubes = []
->>> list.forEach(function(item, index, array) {
-        listOfCubes.push(?);
-    });
+>>> for item in listOfNos:
+...     listOfCubes.append(?)
 ```
   {% else %}
 ```javascript
->>  let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+>>  let listOfNos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 >>  let listOfCubes = [];
->>  list.forEach(function(item, index, array) {
+>>  listOfNos.forEach(function(item, index, array) {
         listOfCubes.push(?);
     });
 ```
@@ -605,11 +602,10 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->> getListOfCubes = function(n) {
-    ?
-}
->> list = getListOfCubes(11);
->> print(list[list.length-1]);
+>> def getListOfCubes(n):
+...    ?
+>> list = getListOfCubes(11)
+>> print(list[len(list) - 1]);
 1729
 ```
   {% else %}
@@ -624,25 +620,21 @@ console.log(names[names.length-1]);
 {% endcase %}
 
 ---
-
-{% case page.lang %}यह एक function है जो हमें 9999 तक की सभी ऐसी संख्याएं बता देता है जो 2 संख्याओं के घनों से बनती हैं। 
+यह एक function है जो हमें 9999 तक की सभी ऐसी संख्याएं बता देता है जो 2 संख्याओं के घनों से बनती हैं। 
+{% case page.lang %}
   {% when "python" %}
 ```python
->>> taxiNos = function() {
-    list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
-            12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
-    nos = [];
-    list.forEach(function(item1, index1, array1) {
-        list.forEach(function(item2, index2, array2) {
-            sum = item1*item1*item1 + item2*item2*item2;
-            // यदि sum चार अंकों तक का ही है और अभी तक नहीं मिला है
-            if (sum <= 9999 && nos.indexOf(sum) == -1) {
-                nos.push(sum);
-            }
-        });
-    });
-    return nos;
-}
+>>> def taxiNos():
+...     list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
+...             12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+...     nos = [];
+...     for item1 in list:
+...         for item2 in list:
+...             sum = item1*item1*item1 + item2*item2*item2
+...             // यदि sum चार अंकों तक का ही है और अभी तक नहीं मिला है
+...             if sum <= 9999 && nos.indexOf(sum) == -1: 
+...                 nos.append(sum)
+...     return nos
 ```
   {% else %}
 ```javascript
@@ -668,9 +660,8 @@ console.log(names[names.length-1]);
 {% case page.lang %}
   {% when "python" %}
 ```python
->>> Taxicab = function(n) {
-       ?
-}
+>>> def Taxicab(n):
+...     ?
 >> Taxicab(2)
 1729
 ```
