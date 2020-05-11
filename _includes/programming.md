@@ -13,9 +13,16 @@ p {
 {% endcase %}
 लगभग सौ साल पहले 1919 में जब श्रीनिवास रामानुजन लंदन में थे उनके मित्र और गुरू, जी. एच. हार्डी उनसे मिलने एक टैक्सी से गये जिसका नंबर 1729 था। बातचीत में उन्होंने रामानुजन से कहा कि यह संख्या बड़ी साधारण सी है, कहीं किसी बुरे वक्त की ओर तो इशारा नहीं करती। "नहीं", रामानुजन बोले, "यह तो बड़ी मजेदार संख्या है यह सबसे छोटी संख्या है जिसे दो संख्याओं के घनों को जोड़कर दो अलग-अलग तरीकों से बनाया जा सकता है।"
 
+
+{% case page.lang %}
+	{% when "python" %}
+आइये, हम भी कंप्यूटर जी के साथ पाइथॉन में बात करते-करते ऐसी ही मजेदार संख्याएं ढूंढें।
+कंप्यूटर जी पर `Terminal` या `Command Prompt` खोलें, `python` टाइप करें, और फिर गणित का कोई सवाल टाईप करें। कंप्यूटर जी आपके सवाल का हल निकाल कर आपको देंगे। यह काम एक साधारण कैलकुलेटर पर भी हो जाएगा। या शायद आप अपने मन में ही इसे हल कर लें। 
+	{% else %}
 आइये, हम भी कंप्यूटर जी के साथ जावास्क्रिप्ट में बात करते-करते ऐसी ही मजेदार संख्याएं ढूंढें।
 
 कंप्यूटर जी पर फायरफॉक्स ब्राउज़र खोलें, Ctrl Shift K एक साथ दबाएं, और गणित का कोई सवाल टाईप करें। कंप्यूटर जी आपके सवाल का हल निकाल कर आपको देंगे। यह काम एक साधारण कैलकुलेटर पर भी हो जाएगा। या शायद आप अपने मन में ही इसे हल कर लें। 
+{% endcase %}
 <details markdown="1">
 <summary></summary>
 
@@ -811,11 +818,9 @@ Taxicab(n) नाम का एक function बनाएं जो वो सब
 * Structure and Interpretation of Computer Programs - <https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html>
 {% case page.lang %}
   {% when "python" %}
-* Python Docs - https://docs.python.org/3/
+* Python Docs - <https://docs.python.org/3/>
   {% else %}
 * Javascript MDN - <https://developer.mozilla.org/en-US/docs/Web/JavaScript>
 {% endcase %}
 * Taxicab number - <https://en.wikipedia.org/wiki/Taxicab_number>
-* Khan Academy - <https://www.khanacademy.org>
-* LeetCode - <https://www.leetcode.com>
 
