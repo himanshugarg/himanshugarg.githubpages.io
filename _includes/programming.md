@@ -1,13 +1,15 @@
 <style type="text/css">
-details {
-	display: inline;
+p {
+	margin-top: 15px;
+	margin-bottom: 0px;
 }
 </style>
 
 {% case page.lang %}
   {% when "python" %}
+![My helpful screenshot](/assets/python.png)
   {% else %}
-![My helpful screenshot](/assets/firefox-console-729.png)
+![My helpful screenshot](/assets/javascript.png)
 {% endcase %}
 लगभग सौ साल पहले 1919 में जब श्रीनिवास रामानुजन लंदन में थे उनके मित्र और गुरू, जी. एच. हार्डी उनसे मिलने एक टैक्सी से गये जिसका नंबर 1729 था। बातचीत में उन्होंने रामानुजन से कहा कि यह संख्या बड़ी साधारण सी है, कहीं किसी बुरे वक्त की ओर तो इशारा नहीं करती। "नहीं", रामानुजन बोले, "यह तो बड़ी मजेदार संख्या है यह सबसे छोटी संख्या है जिसे दो संख्याओं के घनों को जोड़कर दो अलग-अलग तरीकों से बनाया जा सकता है।"
 
@@ -807,8 +809,13 @@ Taxicab(n) नाम का एक function बनाएं जो वो सब
 
 और जानने के लिये आप नीचे दी गयी या अन्य ऐसी वेबसाईट देख सकते हैं।
 * Structure and Interpretation of Computer Programs - <https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html>
+{% case page.lang %}
+  {% when "python" %}
+* Python Docs - https://docs.python.org/3/
+  {% else %}
 * Javascript MDN - <https://developer.mozilla.org/en-US/docs/Web/JavaScript>
+{% endcase %}
 * Taxicab number - <https://en.wikipedia.org/wiki/Taxicab_number>
 * Khan Academy - <https://www.khanacademy.org>
-* LeetCode - दुनिया का अग्रणी ऑनलाईन प्रोग्रामिंग सीखने का प्लैटफॉर्म - <https://www.leetcode.com>
+* LeetCode - <https://www.leetcode.com>
 
