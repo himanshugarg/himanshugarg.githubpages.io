@@ -22,6 +22,11 @@
 {% endcase %}
 
 {% case page.lang %}
+  {% when "ruby" %}
+```ruby
+> 9 * 9 * 9
+=> 729
+```
   {% when "python" %}
 ```python
 >>> 9 * 9 * 9
@@ -37,6 +42,17 @@
 कंप्यूटर जी के साथ आप अपना काम और आसान कर सकते हैं। आप कंप्यूटर जी को कह सकते हैं कि दिये गये नाम की एक जगह बनाएं और वहां हल को संभाल कर रख लें। जिससे जरूरत पड़ने पर आप हल याद करने के बजाय उसका नाम उपयोग कर सकें। अब हम किसी नये हल को नये नाम की जगह बना कर वहां रख सकते हैं। और बाद में उन हलों को लिखने के बजाय उनके नामों से ही नये सवालों का हल निकाल सकते हैं।
 
 {% case page.lang %}
+{% when "ruby" %}
+```ruby
+> cube9 = 729
+=> 729
+
+> cube10 = 1000
+=> 1000
+
+> cube9 + cube10 
+=> 1729
+```
   {% when "python" %}
 ```python
 >>> cube9 = 729
@@ -67,7 +83,26 @@
 
  
 {% case page.lang %}
-  {% when "python" %}
+  {% when "ruby" %}
+```ruby
+> def cube(n) 
+>     return n * n * n
+> end
+=> :cube
+
+> cube(9)
+=> 729
+
+> cube(10)
+=> 1000
+
+> cube(9) + cube(10)
+=> 1729
+
+> cube(8) + cube(11)
+=> 1843
+```
+{% when "python" %}
 ```python
 >>> def cube(n): 
 ...     return n * n * n
@@ -78,7 +113,7 @@
 >>> cube(9) + cube(10)
 1729
 >>> cube(8) + cube(11)
-1842
+1843
 ```
   {% else %}
 ```javascript
@@ -92,7 +127,7 @@
 >> cube(9) + cube(10);
 1729
 >> cube(8) + cube(11);
-1842
+1843
 ```
 {% endcase %}
 
@@ -129,10 +164,23 @@ let sumCubes = function(a, b) {
 {% endcase %}
 </details>
 
-यदि हमें कंप्यूटर जी से कुछ ढूंढने का काम कराना हो तो कंप्यूटर जी के पास यह पता करने का तरीका होना चाहिये कि वह चीज़ उन्हें मिल गई। कंप्यूटर जी के पास ऐसा तरीका है बस आपको उन्हें बताना होगा जांच क्या करनी है। और जांच के सफल या असफल होने पर अलग-अलग काम कर सकते हैं।
+यदि हमें कंप्यूटर जी से कुछ ढूंढने का काम कराना हो तो कंप्यूटर जी के पास यह पता करने का तरीका होना चाहिये कि वह चीज़ उन्हें मिल गई। कंप्यूटर जी के पास ऐसा तरीका है बस आपको उन्हें बताना होगा जांच क्या करनी है। और फिर आप जांच के सफल या असफल होने पर अलग-अलग काम कर सकते हैं।
  
 {% case page.lang %}
-  {% when "python" %}
+  {% when "ruby" %}
+```python
+> if cube(12) + cube(1) == 1729 
+>     puts("sum of 12 cubed and 1 cubed is 1729")
+=> nil
+
+> if cube(13) + cube(0) != 1729
+>     puts("13 cubed is not 1729")
+> else
+>     puts("13 cubed is 1729")
+13 cubed is not 1729
+==> nil
+```
+{% when "python" %}
 ```python
 >>> if cube(12) + cube(1) == 1729: 
 ...     print('sum of 12 cubed and 1 cubed is 1729')
@@ -142,7 +190,8 @@ let sumCubes = function(a, b) {
 ...     print('13 cubed is 1729')
 
 ```
-  {% else %}
+
+{% else %}
 ```javascript
 >> if (cube(12) + cube(1) == 1729) {
     console.log('sum of 12 cubed and 1 cubed is 1729');
@@ -190,7 +239,21 @@ false
 किसी काम को बार-बार कराने के लिये हम उस काम को बार-बार लिख सकते हैं। या कंप्यूटर जी को बता सकते हैं कि इस एक काम को हमेशा करते रहें।
  
 {% case page.lang %}
-  {% when "python" %}
+  {% when "ruby" %}
+```ruby
+> puts("जय हो!")
+जय हो!
+=> nil
+
+> puts("जय हो!")
+जय हो!
+=> nil
+
+> puts("जय हो!")
+जय हो!
+=> nil
+```
+{% when "python" %}
 ```python
 >>> print('जय हो!')
 जय हो!
@@ -198,6 +261,7 @@ false
 जय हो!
 >>> print('जय हो!')
 जय हो!
+
 ```
   {% else %}
 ```javascript
@@ -210,20 +274,27 @@ false
 ```
 {% endcase %} 
 {% case page.lang %}
-  {% when "python" %}
+  {% when "ruby" %}
+```ruby
+> while true
+>     puts("जय हो")
+> end
+```
+  {% else %}
+
+{% when "python" %}
 ```python
 >>> while (true):
 ...     print('जय हो!')
 ```
   {% else %}
+
 ```javascript
 >> while (true) {
     console.log('जय हो!');
 }
 ```
 {% endcase %}
-
-
 
 <details markdown="1">
 <summary> थोड़ा सा अभ्यास </summary>
@@ -309,6 +380,26 @@ false
 
 
 {% case page.lang %}
+  {% when "ruby" %}
+  ```ruby
+> n = 0
+> while n < 10
+>     puts n
+>     n = n+1
+> end
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+=> nil
+```
+
   {% when "python" %}
 ```python
 >>> n = 0
@@ -316,7 +407,8 @@ false
 ...    print(n)
 ...    n = n+1
 ```
-  {% else %}
+
+{% else %}
 ```javascript
 >> let n = 0;
 >> while (n < 10) {
@@ -334,7 +426,15 @@ false
 यदि हमें एक जैसा काम कई चीज़ों पर दोहराना हो तो उन सबको नए नाम देने होंगे। इससे अच्छा होगा कि हम उन चीज़ों की एक सूची बना कर कंप्यूटर जी को उसे संभाल कर रखने के लिये कहें।
 
 {% case page.lang %}
-  {% when "python" %}
+	{% when "ruby" %}
+```ruby
+> greetings = ["सलाम", "नमस्ते", "हैलो"]
+=> ["सलाम", "नमस्ते", "हैलो"]
+
+> fib = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+=> [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+```
+    {% when "python" %}
 ```python
 >>> greetings = ['सलाम', 'नमस्ते', 'हैलो']
 >>> fib = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
@@ -347,6 +447,12 @@ false
 {% endcase %}
 
 {% case page.lang %}
+  {% when "ruby" %}
+```ruby
+>>> puts(names[0])
+सलाम
+=> nil
+```
   {% when "python" %}
 ```python
 >>> print(names[0])
@@ -355,25 +461,36 @@ false
   {% else %}
 ```javascript
 >> console.log(names[0]);
+सलाम
+```
+{% endcase %}
+
+{% case page.lang %}
+  {% when "ruby" %}
+```ruby
+> puts(names[1])
+नमस्ते
+=> nil
+```
+  {% when "python" %}
+```python
+>>> print(names[1])
+नमस्ते
+```
+  {% else %}
+```javascript
+>> console.log(names[1]);
 नमस्ते
 ```
 {% endcase %}
 
 {% case page.lang %}
-  {% when "python" %}
-```python
->>> print(names[1])
-सलाम
+  {% when "ruby" %}
+```ruby
+> puts(names.length)
+3
+=> nil
 ```
-  {% else %}
-```javascript
->> console.log(names[1]);
-सलाम
-```
-{% endcase %}
-
-<summary>  </summary>
-{% case page.lang %}
   {% when "python" %}
 ```python
 >>> print(len(names))
@@ -387,6 +504,11 @@ false
 {% endcase %}
 
 {% case page.lang %}
+  {% when "ruby" %}
+```ruby
+puts(names[names.length - 1])
+हैलो
+```
   {% when "python" %}
 ```python
 print(names[len(names) - 1])
@@ -401,6 +523,17 @@ console.log(names[names.length-1]);
 {% endcase %}
 
 {% case page.lang %}
+  {% when "ruby" %}
+```ruby
+> greetings.push('सत् श्री अकाल')
+> greetings.push('सत् श्री अकाल')
+> puts(len(greetings));
+5
+> puts(greetings[3]);
+सत् श्री अकाल
+> puts(greetings[4]);
+सत् श्री अकाल
+```
   {% when "python" %}
 ```python
 >>> greetings.push('सत् श्री अकाल')
@@ -426,6 +559,10 @@ console.log(names[names.length-1]);
 {% endcase %}
 
 {% case page.lang %}
+  {% when "ruby" %}
+```ruby
+greetings.each { |item| puts(item) }
+```
   {% when "python" %}
 ```python
 >>> for item in greetings:
@@ -440,10 +577,20 @@ console.log(names[names.length-1]);
 {% endcase %}
 
 {% case page.lang %}
+  {% when "ruby" %}
+```ruby
+> puts(greetings.include('सलाम'))
+=> true
+
+> puts(greetings.include('अलविदा'));
+=> false
+```
   {% when "python" %}
 ```python
 >>> print(greetings.index('सलाम'))
 0
+>>> print(greetings.index('अलविदा'));
+-1
 ```
   {% else %}
 ```javascript
@@ -554,7 +701,25 @@ console.log(names[names.length-1]);
 </details>
 यह एक function है जो हमें 9999 तक की सभी ऐसी संख्याएं बता देता है जो 2 संख्याओं के घनों से बनती हैं। 
 {% case page.lang %}
-  {% when "python" %}
+{% when "ruby" %}
+```ruby
+def taxiNos()
+    list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
+            12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
+    nos = [];
+    list.each { |item1| 
+        list.each { |item2|
+            sum = item1 * item1 * item1 + item2 * item2 * item2;
+            # यदि sum चार अंकों तक का ही है और अभी तक नहीं मिला है
+            if sum <= 9999 and nos.include?(sum) == false
+                nos.push(sum)
+            end
+        }
+    }
+    return nos
+end
+```
+{% when "python" %}
 ```python
 >>> def taxiNos():
 ...     list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 
@@ -614,6 +779,8 @@ console.log(names[names.length-1]);
 और जानने के लिये आप नीचे दी गयी या अन्य ऐसी वेबसाईट देख सकते हैं।
 * Structure and Interpretation of Computer Programs - <https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html>
 {% case page.lang %}
+  {% when "ruby" %}
+* Ruby Documentation - <https://www.ruby-lang.org/en/documentation/>
   {% when "python" %}
 * Python Docs - <https://docs.python.org/3/>
   {% else %}
