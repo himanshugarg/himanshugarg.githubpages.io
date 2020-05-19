@@ -1,7 +1,9 @@
 ---
 layout: page
-title: About
+title: अन्य
 permalink: /about/
 ---
 
-I have programmed professionally for over a decade in languages including C/C++, Perl, Python, Javascript and others. I have also volunteered as a translator in my last few jobs and for TWB 
+* [1,00,000+ शब्दों का अनुवाद ट्रांस्लेटर्स विदाउट बौर्डर्स के लिये](https://trommons.org/28514/profile/)
+* [~200 संदेशों का अनुवाद ट्रांस्लेट विकी के लिये](https://translatewiki.net/wiki/Special:Contributions/Hgarg)
+
