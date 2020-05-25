@@ -1,4 +1,4 @@
-![Srinivasa Ramanujan](/assets/RamanujanCambridge.jpg)  चार्ल्स एफ. विल्सन द्वारा खींची इस फोटो में श्रीनिवास रामानुजन बीच में और उनके गुरू जी. एच. हार्डी तस्वीर में दायीं ओर हैं।
+![Srinivasa Ramanujan](/assets/RamanujanCambridge.jpg)  चार्ल्स एफ. विल्सन द्वारा खींची इस फोटो में श्रीनिवास रामानुजन बीच में और उनके गुरू जी. एच. हार्डी तस्वीर में सबसे दायीं तरफ हैं।
 
 बात 1919 की है जब श्रीनिवास रामानुजन लंदन में थे। उनके मित्र और गुरू, जी. एच. हार्डी उनसे मिलने एक टैक्सी से गये। उस टैक्सी का नंबर था 1729। बातचीत में उन्होंने रामानुजन को बताया, "मेरी टैक्सी का नंबर बड़ा साधारण था। यह किसी बुरे वक्त का संकेत तो नहीं"। "नहीं बिल्कुल नहीं", रामानुजन बोले, "यह कोई साधारण संख्या नहीं। यह सबसे छोटी संख्या है, जो बनती है दो संख्याओं के घनों को जोड़कर, दो अलग-अलग तरीकों से।"
 
@@ -240,8 +240,6 @@ let sumCubes = function(a, b) {
 ```
 {% endcase %}
 
-
-
 * checkSumOfCubes नाम की एक दी गई दो संख्याओं के खुद से गुणा कर जोड़ कर देखे कि 1729 आता है या नहीं। {% case page.lang %}
 {% when "ruby" %}
 ```ruby
@@ -270,12 +268,12 @@ false
   {% else %}
 ```javascript
 >> let checkSumOfCubes = function(a, b) {
->> if (cube(a) + cube(b) == 1729) {
-        return ?;
-    } else {
-        return ?;
-    }
-	}
+>>     if (cube(a) + cube(b) == 1729) {
+           return ?;
+       } else {
+           return ?;
+       }
+}
 >> checkSumOfCubes(1, 11)
 true
 >> checkSumOfCubes(2, 10)
@@ -347,11 +345,11 @@ false
 
   {% when "ruby" %}
 ```ruby
->>> n = 0
->>> n = n+1
->>> puts(n)
->>> n = n+1
->>> puts(n)
+> n = 0
+> n = n+1
+> puts(n)
+> n = n+1
+> puts(n)
 ```
 {% when "python" %}
 ```python
@@ -375,13 +373,14 @@ false
 {% endcase %}
 
 * पिछले सवाल में जो काम बार-बार हो रहा है उसे while से कैसे कराएंगे? {% case page.lang %}
-  {% when "python" %}
+  {% when "ruby" %}
 ```ruby
 > n = 0
-> while (true)
+> while true
 >   ?
 > end
 ```
+  {% when "python" %}
 ```python
 >>> n = 0
 >>> while (true):
@@ -414,11 +413,9 @@ false
 ```python
 >>> n = 0
 >>> product = 1
-
 >>> n = n+1
 >>> product = product * 10
 >>> print(n)
-
 >>> n = n+1
 >>> product = product * 10
 >>> print(n)
@@ -427,11 +424,9 @@ false
 ```javascript
 >> let n = 0;
 >> let product = 1;
-
 >> n = n+1;
 >> product = product * 10;
 >> console.log(n);
-
 >> n = n+1;
 >> product = product * 10
 >> console.log(n)
@@ -440,7 +435,7 @@ false
 
 
 
-किसी काम को हमेशा के लिये करते रहने के बजाय हम कंप्यूटर जी को कह सकते हैं कि काम को दोहराने से पहले जांच कर लें कि काम को आगे करना भी है या नहीं।
+किसी काम को हमेशा के लिये करते रहने के बजाय हम कंप्यूटर जी को कह सकते हैं कि काम को वापस करने से पहले जांच कर लें कि काम को आगे करना भी है या नहीं।
 
 
 {% case page.lang %}
@@ -669,6 +664,16 @@ greetings.each { |item| puts(item) }
 
 * यदि हमें 1 से 100 तक की संख्याओं की सूची बनानी हो तो कैसे बनाएंगे?
 * numbersUpto नाम की एक जगह बनाएं जो 1 से लेकर दी गई संख्या तक की संख्याओं की एक सूची बना कर दे। {% case page.lang %}
+  {% when "ruby" %}
+```ruby
+> def numbersUpto(start, finish)
+>     numbers = []
+>     while start <= finish
+>         ?
+>     end
+> end
+> puts(numbersUpto(10))
+```
   {% when "python" %}
 ```python
 >>> define numbersUpto(start, end):
@@ -744,6 +749,15 @@ greetings.each { |item| puts(item) }
 {% endcase %}
 
 * getListOfCubes नाम की एक जगह बनाएं जो दी गई संख्या तक की सारी संख्याओं के घनों की एक सूची बना कर दे| {% case page.lang %}
+  {% when "ruby" %}
+```ruby
+> def getListOfCubes(n)
+>    ?
+> end
+> list = getListOfCubes(11)
+> puts(list[list.length - 1])
+1729
+```
   {% when "python" %}
 ```python
 >> def getListOfCubes(n):
@@ -864,4 +878,3 @@ end
   {% else %}
 ![My helpful screenshot](/assets/javascript.png)
 {% endcase %}
-
