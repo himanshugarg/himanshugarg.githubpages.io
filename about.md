@@ -1,9 +1,9 @@
 ---
 layout: page
-title: अन्य
+title: छोटी सी बात
 permalink: /about/
 ---
 
-* [1,00,000+ शब्दों का अनुवाद ट्रांस्लेटर्स विदाउट बौर्डर्स के लिये](https://trommons.org/28514/profile/)
+* [1,00,000+ शब्दों का अनुवाद ट्रांस्लेटर्स विदाउट बौर्डर्स के लिये](https://https://twb.translationcenter.org/workspace/accounts/view/id/27686)
 * [~200 संदेशों का अनुवाद ट्रांस्लेट विकी के लिये](https://translatewiki.net/wiki/Special:Contributions/Hgarg)
 
