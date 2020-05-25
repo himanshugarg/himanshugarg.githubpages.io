@@ -3,5 +3,5 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-list_title: चिट्ठी आई है
+list_title: थोड़ा सा क्रमादेशन
 ---
