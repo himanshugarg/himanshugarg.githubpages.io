@@ -16,7 +16,7 @@
 title: बातों-बातों में
 email: contact at hgarg dot com 
 description: >- # this means to ignore newlines until "baseurl:"
-  - कंप्यूटर जी के साथ छोटी सी बात
+  - छोटी सी बात कंप्यूटर के साथ
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # github_username:  himanshugarg
