@@ -1,1 +1,1 @@
-Found [Document Analysis Dataset[(https://github.com/ibm-aur-nlp/PubLayNet) today. Must come back to this.
+आज ICDAR की Proceedings में 10,00,000 PDF का डेटासेट मिला़(https://arxiv.org/pdf/1908.07836.pdf)। इनमें IOU नाम की मेट्रिक काम में ली जाती है टैस्टिंग के लिये और कम से कम 0.90 तक के परिणाम आम हैं। एक [कॉन्टेस्ट](https://icdar2021.org/competitions/) भी है। क्या आप तैयार हैं?
