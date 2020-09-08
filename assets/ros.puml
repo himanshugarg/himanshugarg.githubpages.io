@@ -1,0 +1,6 @@
+@startuml
+node "ROS" {
+
+ node "Ubuntu"
+}
+@enduml

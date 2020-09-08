@@ -1,0 +1,19 @@
+@startmindmap
+* ROS
+** Installed Package 1
+** Installed Package n
+*** (Running) Node 1
+*** (Running) Node n
+** Catkin Workspace 1
+*** Package 1
+*** Package n
+**** (Running) Node 1
+**** (Running) Node n
+** Catkin Workspace n
+*** Package 1
+**** (Running) Node 1
+**** (Running) Node n
+*** Package n
+**** (Running) Node 1
+**** (Running) Node n
+@endmindmap
