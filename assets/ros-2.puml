@@ -4,12 +4,12 @@
 ** Installed Package n
 *** (Running) Node 1
 *** (Running) Node n
-** Catkin Workspace 1
+** Catkin Workspace 1\n\nsrc/\nbuild/\ndevel/
 *** Package 1
 *** Package n
 **** (Running) Node 1
 **** (Running) Node n
-** Catkin Workspace n
+** Catkin Workspace n\n\nsrc/\nbuild/\ndevel/
 *** Package 1
 **** (Running) Node 1
 **** (Running) Node n
