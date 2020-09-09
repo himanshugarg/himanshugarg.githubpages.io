@@ -14,5 +14,16 @@ $ source devel/setup.sh
 $ echo $ROS_PACKAGE_PATH
 /home/hgarg/catkin_ws/src:/opt/ros/kinetic/share
 ```
+```bash
+$ cd ~/catkin_ws/src
+$ catkin_create_pkg my_publisher rospy
+Created file my_publisher/package.xml
+Created file my_publisher/CMakeLists.txt
+Created folder my_publisher/src
+Successfully created files in /home/hgarg/catkin_ws/src/my_publisher. Please adjust the values in package.xml.
+hgarg@hgarg-OptiPlex-3046:~/catkin_ws/src$ ls my_publisher/
+CMakeLists.txt  package.xml  src
+
+```
 ये अलग-अलग नोड आपस में मैसेजों के जरिये बात करती हैं। हर मैसेज एक टॉपिक पर पब्लिश होता है। हर टॉपिक का एक पब्लिशर होता है और एक या अधिक 
 सब्सक्राईबर।
