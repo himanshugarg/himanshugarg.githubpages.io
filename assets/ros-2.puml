@@ -4,16 +4,16 @@
 ** Installed Package n
 *** (Running) Node 1
 *** (Running) Node n
-** Catkin Workspace 1\n\nsrc/\nbuild/\ndevel/
-*** Package 1\n\nCMakeLists.txt\npackage.xml\nsrc/
-*** Package n\n\nCMakeLists.txt\npackage.xml\nsrc/
+** Catkin Workspace 1\n$ ls catkin_ws1\n\nsrc/\nbuild/\ndevel/
+*** Package 1\n$ ls catkin_ws/src/my_package1\n\nCMakeLists.txt\npackage.xml\nsrc/
+*** Package n\n$ ls catkin_ws/src/my_packagen\n\nCMakeLists.txt\npackage.xml\nsrc/
 **** (Running) Node 1
 **** (Running) Node n
-** Catkin Workspace n\n\nsrc/\nbuild/\ndevel/
-*** Package 1\n\nCMakeLists.txt\npackage.xml\nsrc/
+** Catkin Workspace n\n$ ls catkin_wsn\n\nsrc/\nbuild/\ndevel/
+*** Package 1\n$ ls catkin_ws/src/my_package1\n\nCMakeLists.txt\npackage.xml\nsrc/
 **** (Running) Node 1
 **** (Running) Node n
-*** Package n\n\nCMakeLists.txt\npackage.xml\nsrc/
+*** Package n\n$ ls catkin_ws/src/my_packagen\n\nCMakeLists.txt\npackage.xml\nsrc/
 **** (Running) Node 1
 **** (Running) Node n
 @endmindmap
