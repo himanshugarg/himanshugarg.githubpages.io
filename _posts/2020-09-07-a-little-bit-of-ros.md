@@ -26,6 +26,17 @@ Created folder my_publisher/src
 Successfully created files in /home/hgarg/catkin_ws/src/my_publisher. Please adjust the values in package.xml.
 hgarg@hgarg-OptiPlex-3046:~/catkin_ws/src$ ls my_publisher/
 CMakeLists.txt  package.xml  src
+```
+```bash
+$ cd ~/catkin_ws/src
+$ catkin_create_pkg my_subscriber rospy
+Created file my_subscriber/package.xml
+Created file my_subscriber/CMakeLists.txt
+Created folder my_subscriber/src
+Successfully created files in /home/hgarg/catkin_ws/src/my_subscriber. Please adjust the values in package.xml.
+hgarg@hgarg-OptiPlex-3046:~/catkin_ws/src$ ls my_subscriber/
+CMakeLists.txt  package.xml  src
+```
 
 **पैकेज के नोड चलाना**
 ```bash
