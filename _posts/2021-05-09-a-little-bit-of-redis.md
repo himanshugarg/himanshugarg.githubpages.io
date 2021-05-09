@@ -3,6 +3,7 @@ Unlike RDBMS's, Redis is an in memory key-data-structure store, supporting strin
 Commonly used operations include:-
 
 STRING | LIST          | SET       | HASH    | ZSET
+-------|---------------|-----------|---------|--------------
  GET   |               |           |         |
  SET   |               |           |         |
  DEL   |               |           |         |
